@@ -12,7 +12,7 @@ const About = () => {
     <section className="min-h-screen w-full bg-gray-800 flex justify-center items-center p-4 md:pb-32">
       <AnimatePresence>
         <motion.div
-          className="flex flex-col rounded-lg bg-white max-w-md mx-4 sm:max-w-lg md:max-w-xl lg:max-w-2xl md:flex-row"
+          className="flex flex-col rounded-lg bg-white max-w-md mx-4 sm:max-w-lg md:max-w-xl lg:max-w-2xl md:flex-row my-40"
           animate={{ scale: 1.1, opacity: 99 }}
           initial={{ scale: 0.9, opacity: 0 }}
           transition={{ duration: 0.7 }}
@@ -79,7 +79,7 @@ const About = () => {
             </div>
             <p className="text-base font-bold text-gray-800 uppercase mt-6">
               Tools & Technologies I Use:
-              <div className="flex gap-3 mt-2">
+              <div className="flex gap-2 mt-2">
                 <img
                   className="hover:mix-blend-normal mix-blend-luminosity"
                   src="/html.png"
