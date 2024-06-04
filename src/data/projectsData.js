@@ -39,13 +39,6 @@ const projectsData = [
       image: "/Lix Logo.png",
       name: "Logo Design - Lix",
       details: "Curated collection of logos I've designed for competitions, academic assignments, and website branding"
-    },
-    {
-      id: 6,
-      image: "/Poster Design.png",
-      name: "Traditional Foods Poster",
-      details: "Poster design with the theme of traditional Gorontalo foods, Dumalo & Balapis",
-      projectUrl: "https://drive.google.com/drive/folders/13gs-WEjlc9OV_1OKtBy5vcGu7zE-As-E?usp=sharing",
     }
   ];
   
