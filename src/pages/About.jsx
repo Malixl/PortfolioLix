@@ -29,11 +29,11 @@ const About = () => {
             <p className="mb-4 lg:text-[14px] text-[10px] text-gray-800">
               Hi Fellas! My Name is Abdul Malik Matoha. I'm a Computer Science
               student at Gorontalo State University, specializing in Information
-              Systems. Passionate about graphic design and UI/UX, I believe in
-              the power of strong design for creating memorable experiences. I
-              enjoy front-end development, using frameworks like Tailwind to
-              build interactive websites. Let's connect and collaborate to
-              elevate our creative projects!
+              Systems. Passionate about Frontend Development and UI/UX, I
+              believe in the power of strong design for creating memorable
+              experiences. I enjoy front-end development, using frameworks like
+              Tailwind to build interactive websites. Let's connect and
+              collaborate to elevate our creative projects!
             </p>
             <div className="flex">
               <a
