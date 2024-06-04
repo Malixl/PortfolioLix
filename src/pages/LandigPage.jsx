@@ -25,8 +25,8 @@ function LandingPage() {
       >
         this website built with:
         <div className="flex gap-3 mt-2 justify-center">
-          <img src="/public/skills/react.png" width="20" alt="" />
-          <img src="/public/skills/tw.png" width="20" alt="" />
+          <img src="react.png" width="20" alt="" />
+          <img src="/public/tw.png" width="20" alt="" />
           <img src="/public/vite.svg" width="20" alt="" />
           <img
             src="/public/skills/framer.svg"
