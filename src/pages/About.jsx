@@ -13,12 +13,13 @@ const About = () => {
       <AnimatePresence>
         <motion.div
           className="flex flex-col rounded-lg bg-white max-w-md mx-4 sm:max-w-lg md:max-w-xl lg:max-w-2xl md:flex-row"
-          animate={{ scale: 1.1 }}
+          animate={{ scale: 1.1, opacity: 99 }}
+          initial={{ scale: 0.9, opacity: 0 }}
           transition={{ duration: 0.7 }}
         >
           <img
             className="lg:h-96 h-44 sm:h-64 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-            src="/src/assets/public/malik.jpg"
+            src="/malik.jpg"
             alt="Profile"
           />
           <div className="flex flex-col p-6 sm:p-8 justify-center">
@@ -26,12 +27,13 @@ const About = () => {
               About Me
             </h5>
             <p className="mb-4 text-sm text-gray-800">
-              I'm a Computer Science student at Gorontalo State University,
-              specializing in Information Systems. Passionate about graphic
-              design and UI/UX, I believe in the power of strong design for
-              creating memorable experiences. I enjoy front-end development,
-              using frameworks like Tailwind to build interactive websites.
-              Let's connect and collaborate to elevate our creative projects!
+              Hi Fellas! My Name is Abdul Malik Matoha. I'm a Computer Science
+              student at Gorontalo State University, specializing in Information
+              Systems. Passionate about graphic design and UI/UX, I believe in
+              the power of strong design for creating memorable experiences. I
+              enjoy front-end development, using frameworks like Tailwind to
+              build interactive websites. Let's connect and collaborate to
+              elevate our creative projects!
             </p>
             <div className="flex">
               <a
@@ -75,6 +77,65 @@ const About = () => {
                 ></ion-icon>
               </a>
             </div>
+            <p className="text-base font-bold text-gray-800 uppercase mt-6">
+              Tools & Technologies I Use:
+              <div className="flex gap-3 mt-2">
+                <img
+                  className="hover:mix-blend-normal mix-blend-luminosity"
+                  src="/html.png"
+                  width="20"
+                  alt=""
+                />
+                <img
+                  className="hover:mix-blend-normal mix-blend-luminosity"
+                  src="/css.png"
+                  width="20"
+                  alt=""
+                />
+                <img
+                  className="hover:mix-blend-normal mix-blend-luminosity"
+                  src="/js.png"
+                  width="20"
+                  alt=""
+                />
+                <img
+                  className="hover:mix-blend-normal mix-blend-luminosity"
+                  src="/react.png"
+                  width="20"
+                  alt=""
+                />
+                <img
+                  className="hover:mix-blend-normal mix-blend-luminosity"
+                  src="/tw.png"
+                  width="20"
+                  alt=""
+                />
+                <img
+                  className="hover:mix-blend-normal mix-blend-luminosity"
+                  src="/ai.png"
+                  width="20"
+                  alt=""
+                />
+                <img
+                  className="hover:mix-blend-normal mix-blend-luminosity"
+                  src="/ps.png"
+                  width="20"
+                  alt=""
+                />
+                <img
+                  className="hover:mix-blend-normal mix-blend-luminosity"
+                  src="/fg.png"
+                  width="20"
+                  alt=""
+                />
+                <img
+                  className="hover:mix-blend-normal mix-blend-luminosity"
+                  src="/framer.svg"
+                  width="20"
+                  alt=""
+                />
+              </div>
+            </p>
           </div>
         </motion.div>
       </AnimatePresence>

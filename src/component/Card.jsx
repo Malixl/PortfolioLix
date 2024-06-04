@@ -51,7 +51,7 @@ const Card = ({
             href={projectUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600 mb-2 md:mb-0 md:mr-2 text-sm"
+            className="bg-zinc-700 text-white px-3 py-1 rounded-md hover:bg-zinc-900 mb-2 md:mb-0 md:mr-2 text-sm"
           >
             Visit
           </a>
