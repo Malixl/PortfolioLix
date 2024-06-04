@@ -59,7 +59,7 @@ function NavigationBar() {
                   className={`${
                     active === i
                       ? "translate-y-4 duration-700 opacity-100 text-white"
-                      : "opacity-0 translate-y-10"
+                      : "opacity-0 translate-y-10 "
                   } `}
                 >
                   {menu.name}

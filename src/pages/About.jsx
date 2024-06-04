@@ -12,7 +12,7 @@ const About = () => {
     <section className="min-h-screen w-full bg-gray-800 flex justify-center items-center p-4 md:pb-32">
       <AnimatePresence>
         <motion.div
-          className="flex flex-col rounded-lg bg-white max-w-md mx-4 sm:max-w-lg md:max-w-xl lg:max-w-2xl md:flex-row my-40"
+          className="flex flex-col rounded-lg bg-white max-w-md mx-4 sm:max-w-lg md:max-w-xl lg:max-w-2xl md:flex-row mb-20"
           animate={{ scale: 1.1, opacity: 99 }}
           initial={{ scale: 0.9, opacity: 0 }}
           transition={{ duration: 0.7 }}
@@ -26,7 +26,7 @@ const About = () => {
             <h5 className="mb-2 text-base font-bold text-gray-800 uppercase">
               About Me
             </h5>
-            <p className="mb-4 text-[13px] text-gray-800">
+            <p className="mb-4 lg:text-[14px] text-[10px] text-gray-800">
               Hi Fellas! My Name is Abdul Malik Matoha. I'm a Computer Science
               student at Gorontalo State University, specializing in Information
               Systems. Passionate about graphic design and UI/UX, I believe in
