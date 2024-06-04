@@ -25,11 +25,11 @@ function LandingPage() {
       >
         this website built with:
         <div className="flex gap-3 mt-2 justify-center">
-          <img src="/src/assets/public/skills/react.png" width="20" alt="" />
-          <img src="/src/assets/public/skills/tw.png" width="20" alt="" />
+          <img src="/public/skills/react.png" width="20" alt="" />
+          <img src="/public/skills/tw.png" width="20" alt="" />
           <img src="/public/vite.svg" width="20" alt="" />
           <img
-            src="/src/assets/public/skills/framer.svg"
+            src="/public/skills/framer.svg"
             className="bg-white p-1 rounded-full"
             width="20"
             alt=""
