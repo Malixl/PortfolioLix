@@ -36,6 +36,13 @@ const projectsData = [
     },
     {
       id: 5,
+      image: "/Transpeed.png",
+      name: "Transpeed",
+      details: "Transpeed is a mobile app designed to support global sustainability and well-being, aligned with the SDGs (Sustainable Development Goals).",
+      projectUrl: "https://www.figma.com/design/ggVUsl117AEV4NkkX9JebW/Gemastik-Project-(FIX)?node-id=0-1&t=SECymmy8QncPdfUd-1"
+    },
+    {
+      id: 6,
       image: "/Lix Logo.png",
       name: "Logo Design - Lix",
       details: "Curated collection of logos I've designed for competitions, academic assignments, and website branding"
