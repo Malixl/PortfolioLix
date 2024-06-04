@@ -33,7 +33,7 @@ const Contact = () => {
             transition={{ duration: 0.5 }}
             className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-md mx-5"
           >
-            <h2 className="text-2xl font-bold mb-4">Contact Me</h2>
+            <h2 className="text-lg font-bold mb-4">Contact Me</h2>
             <form onSubmit={(e) => e.preventDefault()}>
               <div className="mb-4">
                 <label

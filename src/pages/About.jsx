@@ -26,7 +26,7 @@ const About = () => {
             <h5 className="mb-2 text-base font-bold text-gray-800 uppercase">
               About Me
             </h5>
-            <p className="mb-4 text-sm text-gray-800">
+            <p className="mb-4 text-[13px] text-gray-800">
               Hi Fellas! My Name is Abdul Malik Matoha. I'm a Computer Science
               student at Gorontalo State University, specializing in Information
               Systems. Passionate about graphic design and UI/UX, I believe in
