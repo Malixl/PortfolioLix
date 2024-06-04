@@ -10,7 +10,7 @@ const Contact = () => {
   const sendWhatsApp = () => {
     const phoneNumber = "+6283119230298";
     const encodedMessage = encodeURIComponent(
-      `*Name:* ${name}%0a*Email:* ${email}%0a*Message:* ${message}%0a%0a`
+      `*Name:* ${name} *Email:* ${email} *Message:* ${message}`
     );
     const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(url, "_blank").focus();
@@ -18,7 +18,6 @@ const Contact = () => {
 
   const handleSend = () => {
     sendWhatsApp();
-    // Optionally, you can hide the form after sending
     setFormVisible(false);
   };
 
@@ -28,7 +27,7 @@ const Contact = () => {
         {formVisible && (
           <motion.div
             initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 99, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -50 }}
             transition={{ duration: 0.5 }}
             className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-md mx-5"
