@@ -15,7 +15,7 @@ const Projects = () => {
           <p className="text-white text-4xl font-bold text-center mt-10 mb-3 uppercase">
             Projects
           </p>
-          <div className="flex flex-wrap justify-center mb-28 lg:mb-36 lg:mx-72">
+          <div className="flex flex-wrap justify-center mb-28 lg:mb-36 lg:mx-20">
             {projectsData.map((project, index) => (
               <motion.div
                 key={index}
