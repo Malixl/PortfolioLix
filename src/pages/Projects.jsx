@@ -8,9 +8,9 @@ const Projects = () => {
     <section className="bg-gray-800 min-h-screen flex justify-center items-center flex-col">
       <AnimatePresence>
         <motion.div
-          initial={{ opacity: 0 }} // Initial state for fade-in effect
-          animate={{ opacity: 1 }} // Animate to full opacity
-          transition={{ duration: 3 }} // Duration of the fade-in effect
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 3 }}
         >
           <p className="text-white text-4xl font-bold text-center mt-10 mb-3 uppercase">
             Projects
@@ -19,10 +19,10 @@ const Projects = () => {
             {projectsData.map((project, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }} // Initial state for fade-in and translate effect
-                animate={{ opacity: 1, y: 0 }} // Animate to full opacity and move to original position
-                transition={{ duration: 0.7, delay: index * 0.1 }} // Duration and staggered delay for each card
-                whileHover={{ scale: 1.05 }} // Scale up slightly on hover
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: index * 0.1 }}
+                whileHover={{ scale: 1.05 }}
                 className="m-4"
               >
                 <Card

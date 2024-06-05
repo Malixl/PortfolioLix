@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Card = ({
   projectImage,
@@ -33,10 +35,11 @@ const Card = ({
   return (
     <div className="bg-white rounded-lg p-3 md:p-4 w-full max-w-xs mx-2 my-2">
       {projectImage && (
-        <img
+        <LazyLoadImage
           src={projectImage}
           alt={projectName}
           className="w-full h-auto rounded-md mb-2"
+          effect="blur"
         />
       )}
       {projectName && <h2 className="text-lg font-bold mt-2">{projectName}</h2>}
