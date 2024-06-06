@@ -43,30 +43,30 @@ function LandingPage() {
             src="/react.png"
             width="20"
             alt=""
-            animate={{ rotate: 360 }}
-            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+            whileHover={{ rotate: 360 }}
+            transition={{ duration: 2, ease: "linear" }}
           />
           <motion.img
             src="/tw.png"
             width="20"
             alt=""
-            animate={{ rotate: 360 }}
-            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+            whileHover={{ rotate: 360 }}
+            transition={{ duration: 2, ease: "linear" }}
           />
           <motion.img
             src="/vite.svg"
             width="20"
             alt=""
-            animate={{ rotate: 360 }}
-            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+            whileHover={{ rotate: 360 }}
+            transition={{ duration: 2, ease: "linear" }}
           />
           <motion.img
             src="/framer.svg"
             className="bg-white p-1 rounded-full"
             width="20"
             alt=""
-            animate={{ rotate: 360 }}
-            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+            whileHover={{ rotate: 360 }}
+            transition={{ duration: 2, ease: "linear" }}
           />
         </div>
       </motion.div>

@@ -52,7 +52,7 @@ const Contact = () => {
             <h2 className="text-2xl font-bold mb-4 text-center text-gray-800">
               Get in Touch
             </h2>
-            <p className="text-center text-gray-600 mb-6">
+            <p className="text-center text-sm text-gray-600 mb-6">
               Have questions or want to work together? Fill out the form below
               and I'll get back to you soon!
             </p>
