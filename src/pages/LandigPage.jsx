@@ -22,9 +22,9 @@ function LandingPage() {
               onClick={() => {
                 // Replace URL with your resume URL
                 window.location.href =
-                  "https://drive.google.com/file/d/1ZXk2NMedFSmAbjsra_QrCECT9saaq6Cq/view?usp=sharing";
+                  "https://drive.google.com/file/d/1zTUfAF4SVXL9ZrpF2kS1bjFRXjymvyws/view?usp=sharing";
               }}
-              className="bg-white hover:bg-zinc-500 text-black hover:text-white font-bold py-1 px-8 rounded "
+              className="bg-white hover:bg-zinc-500 text-black hover:text-white font-bold py-1 px-8 rounded"
             >
               cv
             </button>
