@@ -94,23 +94,23 @@ const LandingPage = () => {
       >
         This website built with:
         <div className="flex gap-4 mt-2 justify-center">
-          <RotatingIcon src="/public/skills/react.png" alt="React" />
+          <RotatingIcon src="/react.png" alt="React" />
           <motion.img
-            src="/public/skills/tw.png"
+            src="/tw.png"
             width="20"
             alt=""
             whileHover={{ rotate: 360 }}
             transition={{ duration: 2, ease: "linear" }}
           />
           <motion.img
-            src="/public/skills/vite.svg"
+            src="/vite.svg"
             width="20"
             alt=""
             whileHover={{ rotate: 360 }}
             transition={{ duration: 2, ease: "linear" }}
           />
           <motion.img
-            src="/public/skills/framer.svg"
+            src="/framer.svg"
             className="bg-white p-1 rounded-full"
             width="20"
             alt=""
