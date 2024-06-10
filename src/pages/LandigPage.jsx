@@ -43,7 +43,7 @@ const RotatingIcon = ({ src, alt }) => (
 );
 
 const LandingPage = () => {
-  const text = "HI, I'M LIX".split(" ");
+  const text = "HI, I'M LIX";
 
   return (
     <section className="bg-gray-800 h-screen w-full flex flex-col lg:gap-32 gap-24 justify-center items-center">
@@ -55,18 +55,20 @@ const LandingPage = () => {
           transition={{ duration: 1.5 }}
         >
           <div className="text-animation font-rowdies text-center text-white font-title lg:text-9xl text-6xl font-bold leading-tight tracking-tighter">
-            {text.map((el, i) => (
-              <motion.span
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{
-                  duration: 2,
-                  delay: i / 10,
-                }}
-                key={i}
-              >
-                {el}
-              </motion.span>
+            {text.split(" ").map((word, i) => (
+              <React.Fragment key={i}>
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    duration: 2,
+                    delay: i / 10,
+                  }}
+                >
+                  {word}
+                </motion.span>
+                {i < text.split(" ").length - 1 && <span>&nbsp;</span>}
+              </React.Fragment>
             ))}
           </div>
           <div className="flex flex-col items-end gap-2">
@@ -92,23 +94,23 @@ const LandingPage = () => {
       >
         This website built with:
         <div className="flex gap-4 mt-2 justify-center">
-          <RotatingIcon src="/react.png" alt="React" />
+          <RotatingIcon src="/public/skills/react.png" alt="React" />
           <motion.img
-            src="/tw.png"
+            src="/public/skills/tw.png"
             width="20"
             alt=""
             whileHover={{ rotate: 360 }}
             transition={{ duration: 2, ease: "linear" }}
           />
           <motion.img
-            src="/vite.svg"
+            src="/public/skills/vite.svg"
             width="20"
             alt=""
             whileHover={{ rotate: 360 }}
             transition={{ duration: 2, ease: "linear" }}
           />
           <motion.img
-            src="/framer.svg"
+            src="/public/skills/framer.svg"
             className="bg-white p-1 rounded-full"
             width="20"
             alt=""

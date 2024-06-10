@@ -19,7 +19,7 @@ const About = () => {
         >
           <motion.img
             className="lg:h-96 h-44 sm:h-64 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-            src="/malik.jpg"
+            src="/public/profile/malik.webp"
             alt="Profile"
             animate={{ x: 0, opacity: 1 }}
             initial={{ x: -200, opacity: 0 }}
@@ -99,63 +99,63 @@ const About = () => {
               <div className="flex gap-2 mt-2">
                 <motion.img
                   className="hover:opacity-50 mix-blend-luminosity hover:mix-blend-normal transition-opacity duration-300"
-                  src="/html.png"
+                  src="/public/skills/html.png"
                   width="20"
                   alt=""
                   whileHover={{ scale: 1.2 }}
                 />
                 <motion.img
                   className="hover:opacity-50 transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
-                  src="/css.png"
+                  src="/public/skills/css.png"
                   width="20"
                   alt=""
                   whileHover={{ scale: 1.2 }}
                 />
                 <motion.img
                   className="hover:opacity-50 transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
-                  src="/js.png"
+                  src="/public/skills/js.png"
                   width="20"
                   alt=""
                   whileHover={{ scale: 1.2 }}
                 />
                 <motion.img
                   className="hover:transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
-                  src="/react.png"
+                  src="/public/skills/react.png"
                   width="20"
                   alt=""
                   whileHover={{ scale: 1.2 }}
                 />
                 <motion.img
                   className="hover:transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
-                  src="/tw.png"
+                  src="/public/skills/tw.png"
                   width="20"
                   alt=""
                   whileHover={{ scale: 1.2 }}
                 />
                 <motion.img
                   className="hover:transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
-                  src="/ai.png"
+                  src="/public/skills/ai.png"
                   width="20"
                   alt=""
                   whileHover={{ scale: 1.2 }}
                 />
                 <motion.img
                   className="hover:transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
-                  src="/ps.png"
+                  src="/public/skills/ps.png"
                   width="20"
                   alt=""
                   whileHover={{ scale: 1.2 }}
                 />
                 <motion.img
                   className="hover:transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
-                  src="/fg.png"
+                  src="/public/skills/fg.png"
                   width="20"
                   alt=""
                   whileHover={{ scale: 1.2 }}
                 />
                 <motion.img
                   className="hover:transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
-                  src="/framer.svg"
+                  src="/public/skills/framer.svg"
                   width="20"
                   alt=""
                   whileHover={{ scale: 1.2 }}
