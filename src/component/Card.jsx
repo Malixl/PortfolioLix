@@ -10,6 +10,7 @@ const Card = ({
   projectUrl,
   figmaUrl,
   githubUrl,
+  badges,
 }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -43,12 +44,21 @@ const Card = ({
         />
       )}
       {projectName && <h2 className="text-lg font-bold mt-2">{projectName}</h2>}
+      {badges &&
+        badges.map((badge, index) => (
+          <span
+            key={index}
+            className="bg-gray-200 text-gray-600 text-xs font-semibold rounded-full px-2 py-1 mr-2 mb-2"
+          >
+            {badge}
+          </span>
+        ))}
       {projectDetails && (
-        <p className="text-[13px] text-gray-700 mb-2 md:mb-3">
+        <p className="text-[13px] text-gray-700 mb-2 md:mb-3 my-3">
           {projectDetails}
         </p>
       )}
-      <div className="flex lg:gap-2 gap-5 md:flex-row">
+      <div className="flex lg:gap-2 gap-5 md:flex-row justify-between items-center">
         {projectUrl && (
           <a
             href={projectUrl}

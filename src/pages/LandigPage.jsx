@@ -65,12 +65,12 @@ const LandingPage = () => {
                 }}
                 key={i}
               >
-                {el}{" "}
+                {el}
               </motion.span>
             ))}
           </div>
           <div className="flex flex-col items-end gap-2">
-            <TypingText text="Front-end Developer & UI/UX Designer" />
+            <TypingText text="Front-end Developer, Graphic & UI Designer" />
             <button
               onClick={() => {
                 // Replace URL with your resume URL
