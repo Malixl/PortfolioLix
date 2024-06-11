@@ -42,7 +42,7 @@ function NavigationBar() {
             className={`bg-gray-500 duration-500 ${Menus[active].dis} border-4 border-gray-800 h-16 w-16 absolute -top-5 rounded-full`}
           ></span>
           {Menus.map((menu, i) => (
-            <li key={i} className="w-16">
+            <li key={i} className="w-16 font-bold text-sm lg:text-sm">
               <Link
                 to={menu.path}
                 className="flex flex-col text-center pt-6"

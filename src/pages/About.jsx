@@ -96,7 +96,7 @@ const About = () => {
               transition={{ delay: 0.9, duration: 0.5 }}
             >
               Tools & Technologies I Use:
-              <div className="flex gap-2 mt-2">
+              <span className="flex gap-2 mt-2">
                 <motion.img
                   className="hover:opacity-50 mix-blend-luminosity hover:mix-blend-normal transition-opacity duration-300"
                   src="/html.png"
@@ -105,62 +105,62 @@ const About = () => {
                   whileHover={{ scale: 1.2 }}
                 />
                 <motion.img
-                  className="hover:opacity-50 transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
+                  className="hover:opacity-50 mix-blend-luminosity hover:mix-blend-normal transition-opacity duration-300"
                   src="/css.png"
                   width="20"
                   alt=""
                   whileHover={{ scale: 1.2 }}
                 />
                 <motion.img
-                  className="hover:opacity-50 transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
+                  className="hover:opacity-50 mix-blend-luminosity hover:mix-blend-normal transition-opacity duration-300"
                   src="/js.png"
                   width="20"
                   alt=""
                   whileHover={{ scale: 1.2 }}
                 />
                 <motion.img
-                  className="hover:transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
+                  className="hover:opacity-50 mix-blend-luminosity hover:mix-blend-normal transition-opacity duration-300"
                   src="/react.png"
                   width="20"
                   alt=""
                   whileHover={{ scale: 1.2 }}
                 />
                 <motion.img
-                  className="hover:transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
+                  className="hover:opacity-50 mix-blend-luminosity hover:mix-blend-normal transition-opacity duration-300"
                   src="/tw.png"
                   width="20"
                   alt=""
                   whileHover={{ scale: 1.2 }}
                 />
                 <motion.img
-                  className="hover:transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
+                  className="hover:opacity-50 mix-blend-luminosity hover:mix-blend-normal transition-opacity duration-300"
                   src="/ai.png"
                   width="20"
                   alt=""
                   whileHover={{ scale: 1.2 }}
                 />
                 <motion.img
-                  className="hover:transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
+                  className="hover:opacity-50 mix-blend-luminosity hover:mix-blend-normal transition-opacity duration-300"
                   src="/ps.png"
                   width="20"
                   alt=""
                   whileHover={{ scale: 1.2 }}
                 />
                 <motion.img
-                  className="hover:transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
+                  className="hover:opacity-50 mix-blend-luminosity hover:mix-blend-normal transition-opacity duration-300"
                   src="/fg.png"
                   width="20"
                   alt=""
                   whileHover={{ scale: 1.2 }}
                 />
                 <motion.img
-                  className="hover:transition-opacity duration-300 mix-blend-luminosity hover:mix-blend-normal"
+                  className="hover:opacity-50 mix-blend-luminosity hover:mix-blend-normal transition-opacity duration-300"
                   src="/framer.svg"
                   width="20"
                   alt=""
                   whileHover={{ scale: 1.2 }}
                 />
-              </div>
+              </span>
             </motion.p>
           </div>
         </motion.div>
