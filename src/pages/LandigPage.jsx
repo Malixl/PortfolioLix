@@ -79,9 +79,9 @@ const LandingPage = () => {
                 window.location.href =
                   "https://drive.google.com/file/d/1zTUfAF4SVXL9ZrpF2kS1bjFRXjymvyws/view?usp=sharing";
               }}
-              className="bg-white hover:bg-transparent hover:border hover:border-zinc-500 text-black hover:text-white font-bold py-1 px-8 rounded"
+              className="bg-white hover:bg-transparent hover:border hover:border-zinc-500 text-black hover:text-white font-bold py-1 px-4 rounded"
             >
-              CV
+              Resume
             </button>
           </div>
         </motion.div>
