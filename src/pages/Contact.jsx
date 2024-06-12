@@ -28,7 +28,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-gray-800 flex justify-center items-center min-h-screen p-5">
+    <section className="bg-gray-800 flex justify-center items-center h-svh p-5">
       <AnimatePresence>
         {showError && (
           <motion.div
@@ -53,8 +53,7 @@ const Contact = () => {
               Get in Touch
             </h2>
             <p className="text-center text-sm text-gray-600 mb-6">
-              Have questions or want to work together? Fill out the form below
-              and I'll get back to you soon!
+              Have questions or want to work together?
             </p>
             <form onSubmit={(e) => e.preventDefault()}>
               <div className="mb-4">
@@ -137,7 +136,7 @@ const Contact = () => {
           </button>
         </motion.div>
       )}
-    </div>
+    </section>
   );
 };
 

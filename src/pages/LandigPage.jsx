@@ -46,7 +46,7 @@ const LandingPage = () => {
   const text = "HI, I'M LIX";
 
   return (
-    <section className="bg-gray-800 h-screen w-full flex flex-col lg:gap-32 gap-24 justify-center items-center">
+    <section className="bg-gray-800 h-svh w-full flex flex-col lg:gap-32 gap-24 justify-center items-center">
       <AnimatePresence>
         <motion.div
           className="lg:text-right text-center gap-2 flex flex-col"

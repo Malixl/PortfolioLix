@@ -85,7 +85,7 @@ const Projects = () => {
           </div>
         </motion.div>
       </div>
-      <div className="max-w-4xl mx-auto lg:mb-32 mb-28 px-4">
+      <div className="max-w-4xl mx-auto lg:mb-32 mb-28">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <AnimatePresence>
             {filteredProjects.map((project, index) => (
