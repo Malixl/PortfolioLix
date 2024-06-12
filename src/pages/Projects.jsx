@@ -52,51 +52,52 @@ const Projects = () => {
             Projects
           </h1>
           <div className="flex justify-center">
-            <button
-              onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="bg-white text-gray-800 rounded-md py-1 px-2 focus:outline-none flex items-center"
-            >
-              <span className="mr-2">Select Project:</span>
-              <span className="font-medium">{selectedBadge || "All"}</span>
-              <motion.svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 ml-1"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                animate={{ rotate: dropdownOpen ? 180 : 0 }}
+            <div ref={dropdownRef} className="relative">
+              <button
+                onClick={() => setDropdownOpen(!dropdownOpen)}
+                className="bg-white text-gray-800 rounded-md py-1 px-2 focus:outline-none flex items-center"
               >
-                <motion.path d="M6 9l6 6 6-6" />
-              </motion.svg>
-            </button>
-            {dropdownOpen && (
-              <motion.ul
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
-                className="absolute bg-white text-gray-800 rounded-md py-1 px-2 mt-10 z-10"
-                ref={dropdownRef}
-              >
-                <li
-                  onClick={() => handleBadgeSelect(null)}
-                  className="cursor-pointer hover:bg-gray-200 py-1 px-2"
+                <span className="mr-2">Select Project:</span>
+                <span className="font-medium">{selectedBadge || "All"}</span>
+                <motion.svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 ml-1"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  animate={{ rotate: dropdownOpen ? 180 : 0 }}
                 >
-                  All
-                </li>
-                {allBadges.map((badge) => (
+                  <motion.path d="M6 9l6 6 6-6" />
+                </motion.svg>
+              </button>
+              {dropdownOpen && (
+                <motion.ul
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="absolute bg-white text-gray-800 rounded-md py-1 px-2 mt-1 z-10"
+                >
                   <li
-                    key={badge}
-                    onClick={() => handleBadgeSelect(badge)}
+                    onClick={() => handleBadgeSelect(null)}
                     className="cursor-pointer hover:bg-gray-200 py-1 px-2"
                   >
-                    {badge}
+                    All
                   </li>
-                ))}
-              </motion.ul>
-            )}
+                  {allBadges.map((badge) => (
+                    <li
+                      key={badge}
+                      onClick={() => handleBadgeSelect(badge)}
+                      className="cursor-pointer hover:bg-gray-200 py-1 px-2"
+                    >
+                      {badge}
+                    </li>
+                  ))}
+                </motion.ul>
+              )}
+            </div>
           </div>
         </motion.div>
       </div>
