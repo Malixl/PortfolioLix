@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Contact = () => {
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [formVisible, setFormVisible] = useState(true);
   const [showError, setShowError] = useState(false);
@@ -11,14 +10,14 @@ const Contact = () => {
   const sendWhatsApp = () => {
     const phoneNumber = "+6283119230298";
     const encodedMessage = encodeURIComponent(
-      `*Name:* ${name} *Email:* ${email} *Message:* ${message}`
+      `*Name:* ${name} *Message:* ${message}`
     );
     const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(url, "_blank").focus();
   };
 
   const handleSend = () => {
-    if (name && email && message) {
+    if (name && message) {
       sendWhatsApp();
       setFormVisible(false);
     } else {
@@ -70,22 +69,6 @@ const Contact = () => {
                   placeholder="Enter your name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlFor="email"
-                >
-                  Email
-                </label>
-                <input
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none  focus:ring focus:ring-zinc-500"
-                  id="email"
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div className="mb-4">

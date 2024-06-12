@@ -11,7 +11,7 @@ const Preloader = ({ setLoading }) => {
 
   return (
     <motion.div
-      className="bg-white h-screen flex justify-center items-center"
+      className="bg-white h-svh flex justify-center items-center"
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
