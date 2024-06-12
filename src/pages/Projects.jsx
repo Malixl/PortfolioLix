@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Card from "../component/Card";
 import projectsData from "../data/projectsData";
 import { motion, AnimatePresence } from "framer-motion";
@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const Projects = () => {
   const [selectedBadge, setSelectedBadge] = useState(null);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   const allBadges = projectsData.reduce((badges, project) => {
     project.badges.forEach((badge) => {
@@ -24,6 +25,19 @@ const Projects = () => {
   const filteredProjects = selectedBadge
     ? projectsData.filter((project) => project.badges.includes(selectedBadge))
     : projectsData;
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [dropdownRef]);
 
   return (
     <section className="bg-gray-800 min-h-screen flex justify-center items-center flex-col">
@@ -64,6 +78,7 @@ const Projects = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
                 className="absolute bg-white text-gray-800 rounded-md py-1 px-2 mt-10 z-10"
+                ref={dropdownRef}
               >
                 <li
                   onClick={() => handleBadgeSelect(null)}
@@ -86,11 +101,18 @@ const Projects = () => {
         </motion.div>
       </div>
       <div className="max-w-4xl mx-auto lg:mb-32 mb-28">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <AnimatePresence>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={selectedBadge || "all"}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.5 }}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
             {filteredProjects.map((project, index) => (
               <motion.div
-                key={index}
+                key={project.name}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -108,8 +130,8 @@ const Projects = () => {
                 />
               </motion.div>
             ))}
-          </AnimatePresence>
-        </div>
+          </motion.div>
+        </AnimatePresence>
       </div>
     </section>
   );
