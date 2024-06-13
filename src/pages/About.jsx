@@ -35,12 +35,12 @@ const About = () => {
               initial={{ opacity: 0 }}
               transition={{ delay: 0.5, duration: 0.5 }}
             >
-              Hi Fellas! My Name is Abdul Malik Matoha. A creative developer and
+              Hi Fellas! I'm Abdul Malik Matoha, a creative developer and
               designer specializing in Frontend Development and Graphic & UI
               Design. Currently studying Computer Science with a focus on
-              Information Systems at Gorontalo State University. Passionate
-              about crafting products and impactful visuals to create memorable
-              designs
+              Information Systems at Gorontalo State University. I enjoy
+              crafting products and impactful visuals to create memorable
+              designs.
             </motion.p>
             <motion.div
               className="flex mb-6"
