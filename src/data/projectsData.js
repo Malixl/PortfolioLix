@@ -11,10 +11,10 @@ const projectsData = [
     },
     {
       id: 2,
-      image: "/Gistana.webp",
+      image: "/Gistana.png",
       name: "Gistana",
       details: "Interactive map website with evacuation routes, danger zones, and gathering points.",
-      figmaUrl: "https://www.figma.com/design/anWVS5WN1Jt7wpo53IWnif/WebGIS-Destana?t=OLdIUlrUi5POn9VR-1",
+      figmaUrl: "https://s.id/272a1",
       githubUrl: "https://github.com/gistana",
       projectUrl: "https://gistana.github.io/",
       badges: ["UI Design", "Frontend"],
@@ -48,7 +48,7 @@ const projectsData = [
     },
     {
       id: 6,
-      image: "/Lix Logo.webp",
+      image: "/Lix Logo.png",
       name: "Logo Design - Lix",
       details: "A curated collection of logos I've designed for competitions, academic assignments, website branding, and more.",
       badges: ["Graphic Design"],
