@@ -11,8 +11,8 @@ const projectsData = [
     },
     {
       id: 2,
-      image: "/Gistana.png",
-      name: "Gistana",
+      image: "/Gisaster.png",
+      name: "Gisaster",
       details: "Interactive map website with evacuation routes, danger zones, and gathering points.",
       figmaUrl: "https://s.id/272a1",
       githubUrl: "https://github.com/gistana",
